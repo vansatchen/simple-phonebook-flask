@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Example1{% endblock %}
+
+{% block example1url %}<a class="nav-link active" href="/gs">Example1</a>{% endblock %}
+
+{% block table1 %}
+  <table id="data" class="table table-striped table-bordered mt-3">
+    {% include 'head.html' %}
+    <tbody>
+      {% for index in range(persons|length // 2) %}
+        <tr>
+          <td>{{ persons[index].id }}</td>
+          <td>{{ persons[index].callerid[:-7] }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+{% block table2 %}
+  <table id="data" class="table table-striped table-bordered mt-3">
+    {% include 'head.html' %}
+    <tbody>
+      {% for index in range(persons|length // 2, persons|length) %}
+        <tr>
+          <td>{{ persons[index].id }}</td>
+          <td>{{ persons[index].callerid[:-7] }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
