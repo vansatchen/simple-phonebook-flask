@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve phonebook-flask
+After=network.target
+
+[Service]
+User=user
+Group=www-data
+WorkingDirectory=/opt/phonebook_flask
+Environment="PATH=/opt/phonebook_flask/venv/bin"
+ExecStart=/opt/phonebook_flask/venv/bin/uwsgi --ini phonebook-flask.ini
+
+[Install]
+WantedBy=multi-user.target
