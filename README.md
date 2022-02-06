@@ -17,7 +17,7 @@ $ sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev
 Make virtual environment(optional)
 ```
 $ sudo apt install python3-venv
-$ sudo cp -r ~/simple-phonebook-flask/phonebook /opt/
+$ sudo cp -r ~/simple-phonebook-flask/phonebook_flask /opt/phonebook
 $ sudo chown -R user:user /opt/phonebook
 $ cd /opt/phonebook
 $ python3 -m venv venv
