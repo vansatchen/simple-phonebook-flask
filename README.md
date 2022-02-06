@@ -1,5 +1,6 @@
 # simple-phonebook-flask
 Make your simple phonebook with flask and asterisk database.
+<!--
 ## Preparation
 ### Need:
 - Linux server(Ubuntu) with user with sudo privilage.
@@ -87,3 +88,4 @@ Now open it in browser
 $ sudo journalctl -u nginx
 $ sudo journalctl -u phonebook-flask
 ```
+-->
