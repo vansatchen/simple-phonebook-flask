@@ -34,7 +34,7 @@ $ pip install wheel
 ```
 > In venv use **pip**, not pip3
 ```
-$ pip install uwsgi flask mysqlclient
+$ pip install uwsgi flask flask-sqlalchemy mysqlclient
 ```
 Edit app.py with your needs.
 Especially this line for connect to mysql:
